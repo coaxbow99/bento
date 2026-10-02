@@ -5,10 +5,14 @@
   <title>Home - Bento Box</title>
   
   <!-- 1. GOOGLE FONTS LINK -->
-  <link rel="preconnect" href="https://googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
   <!-- 2. STYLESHEET RECONNECTION LINK (Crucial Fix) -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -21,44 +25,38 @@
     <a href="page3.html" class="nav-link">Tips</a>
   </nav>
 
+  <!-- Welcome Header Area-->
+   <header class="bento-header">
+    <h1 class="site-title">Welcome to My Bento Site</h1>
+   </header>
+
   <!-- The Main Grid Container -->
   <div class="bento-container">
     
-    <!-- Box 1: Welcome Compartment -->
-    <div class="bento-box welcome-box">
-      <h1>Welcome to My Bento Website!</h1>
-      <p>This is my welcome page (The Lid). I will put my Figma Logo here later!</p>
-    </div>
-    
-    <!-- Box 2: Figma Logo Target Block -->
-    <div class="bento-box logo-box">
-      <h2>Figma Logo</h2>
-      <div style="border: 2px dashed #ccc; padding: 20px; border-radius: 8px; width: 80%; text-align: center;">
-        [Logo Placeholder]
-      </div>
-    </div>
-    
-    <!-- Box 3: Chopsticks Compartment -->
-    <div class="bento-box chopstick-box">
-      <h2>Utensils</h2>
-      <div class="chopstick-graphic"></div>
-      <div class="chopstick-graphic two"></div>
-      <p style="font-size: 0.85rem; margin-top: 10px;">Chopsticks loaded.</p>
-    </div>
+            <!-- Box 1: Welcome Compartment (Big Banner) -->
+        <div class="bento-box welcome-box">
+            <img src="bento-rice.jpg" alt="Bento Rice" class="bento-image">
+        </div>
 
-    <!-- Box 4: Blog Highlights -->
-    <div class="bento-box blog-box">
-      <h2>Recent Blog Posts</h2>
-      <p>Check out my latest progress tracking codes here...</p>
-    </div>
+        <!-- Box 2: Figma Logo Target Block -->
+        <div class="bento-box logo-box">
+            <img src="bento-tomato.jpg" alt="Bento Tomato" class="bento-image">
+        </div>
 
-    <!-- Box 5: Helpful Tips Quick Block -->
-    <div class="bento-box tips-box">
-      <h2>Quick Tips</h2>
-      <p>Always use CSS Grid for clean Bento structures!</p>
-    </div>
-
+        <!-- Box 3: Chopsticks Compartment -->
+        <div class="bento-box chopstick-box">
+            <img src="bento-ball.jpg" alt="Bento Ball" class="bento-image">
+        </div>
   </div>
 
+<p class="site-description">Welcome to my Bento Site! This is a simple guide to packing traditional lunch boxes, making quick side dishes, and arranging fresh ingredients so they look good. Since it’s October, we also have a special pumpkin sushi recipe for the Halloween season, along with ghost nigiri, mummy rolls, and crunchy spider maki.</p>
+
+<!-- Recipe Links-->
+ <div class="recipe-links-box">
+  <A href="Pumpkin-Sushi.html" class="recipe-link link-pumpkin"> Pumpkin Sushie Recipe</A>
+  <a href="Spooky-Ghost-Nigiri.html" class="recipe-link"> Spooky Ghost Nigiri</a>
+ </div>
+
+</div>
 </body>
 </html>

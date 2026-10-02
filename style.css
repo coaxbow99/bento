@@ -5,15 +5,12 @@ body {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
   color: #2b2b2b;
   margin: 0;
   padding: 40px 20px;
-  
+  }
   /* ─── NEW JAPANESE RESTAURANT BACKGROUND IMAGE ─── */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                    url('NARUTO.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(NARUTO.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,17 +67,12 @@ nav a {
 .welcome-box {
   grid-column: span 2; /* Spans across 2 columns wide */
   grid-row: span 2;    /* Spans across 2 rows high */
-  background: #fff8f8;
+
 }
 
 .logo-box {
   grid-column: span 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #f0f7f4;
+  
 }
 
 .chopstick-box {
@@ -89,23 +81,134 @@ nav a {
   position: relative;
 }
 
-/* Decorative CSS Chopsticks */
-.chopstick-graphic {
-  width: 80%;
-  height: 6px;
-  background: #8b4513; /* Wood brown */
-  margin: 15px 0;
-  border-radius: 3px;
-  transform: rotate(-5deg);
-}
-.chopstick-graphic.two {
-  transform: rotate(-8deg) translateY(4px);
-}
-
 .blog-box {
   grid-column: span 2;
 }
 
 .tips-box {
   grid-column: span 1;
+}
+/* Fix for Tips Box Grid sizing */
+.tips-box {
+    grid-column: span 1;
+}
+
+/* Navigation Bar Container */
+.bento-nav {
+    display: flex;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+/* Individual Links */
+.nav-link {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Reusable Bento Box Cards */
+.bento-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+/* Creates a flex or grid block configuration with clean spacing gaps */
+.bento-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* This creates the separation gap between boxes */
+    max-width: 800px; /* Restricts the box width so it looks clean and small */
+    margin: 0 auto; /* Centers the narrow content area on your wide display screen */
+}
+
+/* Base Bento Card Overrides */
+.bento-card {
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px dashed rgba(0, 0, 0, 0.1); /* Matches your dashed placeholder look */
+}
+
+/* Color Tier 1: Pastel Soft Green Box */
+.card-green {
+    background-color: #e2f0d9 !important; 
+    color: #385723;
+}
+
+/* Color Tier 2: Pastel Soft Yellow Box */
+.card-yellow {
+    background-color: #fff2cc !important;
+    color: coral
+}
+.nav-link.active {
+  background-color: #2b2b2b;
+  color: #ffffff !important;
+  padding: 6px 12px;
+  border-radius: 6px
+}
+.bento-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Crops the images cleanly without distorting or squishing them */
+    border-radius: inherit;  /* Automatically inherits the 16px rounded corners you already configured */
+    display: block;
+}
+
+.site-title {
+  text-align: center;
+  margin-top: 30px; 
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ .site-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto 40px auto;
+
+  font-family: "Fraunces", serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color:antiquewhite;
+  font-weight: 500;
+  font-style: normal;
+
+}
+.bento-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.bento-box:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 10px 20px rgba(255, 136, 0, 0.2);
+}
+.recipe-links-box {
+  max-width: 750px;
+  margin: 20px auto;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.recipe-link {
+  font-family: "fraunces", sherif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+.link-pumpkin, .link-pumplin:visited {
+  color:orangered;
+}
+.link-ghost, .link-ghost:visited {
+  color: #39ff14;
 }
