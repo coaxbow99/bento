@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> My blog<title></title>
+        <link rel="stylesheet" href="style.css">
+
+    <style>
+    /* Forces the footer navigation area to stack vertically and center */
+    .recipe-footer-nav {
+        display: flex !important;
+        flex-direction: column !important; /* Stacks links vertically */
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 15px !important;              /* Spacing between the links */
+        width: 100% !important;
+        margin-top: 40px !important;
+        padding-top: 20px !important;
+        border-top: 1px dashed rgba(255, 255, 255, 0.3) !important;
+    }
+
+    /* Makes the stacked navigation links large, bold, and readable white */
+    .recipe-footer-nav .nav-link {
+        color: #ffffff !important;         /* Pure white text */
+        text-decoration: none !important;  /* Removes the ugly underline */
+        font-size: 1.5rem !important;      /* Makes them much larger */
+        font-weight: bold !important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9) !important; /* Clear outline drop shadow */
+        display: block !important;
+        text-align: center !important;
+    }
+
+    /* Turns the link into an orange accent on hover */
+    .recipe-footer-nav .nav-link:hover {
+        color: #ff9f43 !important;
+        text-shadow: 1px 1px 8px rgba(255, 159, 67, 0.6) !important;
+    }
+</style>
+</head>
+</html>
+<body style="background-image: url('NARUTO.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+        
+        <img src="Jack-o-lantern.png" alt="Jack-O-Lantern Sushi" class="recipe-main-img">
+
+                    <div class="recipe-text-content">
+                <h2>Jack-O'-Lantern Halloween Sushi</h2>
+                
+                <div class="recipe-block">
+                    <h3>Ingredients~</h3>
+                    <ul>
+                        <li>2 cups Sushi Rice (cooked and seasoned)</li>
+                        <li>2 tbsp Salmon flakes, minced carrots, or orange tobiko (for the orange color)</li>
+                        <li>Nori sheets (seaweed)</li>
+                        <li>1 small Cucumber (sliced into thin strips for the eyes/stem)</li>
+                        <li>Soy sauce for serving</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-block">
+                    <h3>Instructions~</h3>
+                    <ol>
+                        <li>Mix your cooked sushi rice with salmon flakes or carrot juice until it turns a vibrant, pumpkin-orange color.</li>
+                        <li>To make the face details, roll small strips of orange rice inside small pieces of Nori to create individual nose and eye shapes.</li>
+                        <li>Place your long cucumber strips along with the tiny eye/nose rolls onto your main sheet of Nori.</li>
+                        <li>Pack the remaining orange pumpkin rice around them tightly to form the full round face shape.</li>
+                        <li>Roll the entire roll tightly in a full Nori sheet, slice it with a wet knife to reveal the hidden Jack-O'-Lantern faces, and serve!</li>
+                                <!-- 1. Fixed: Added proper closing </li> tag -->
+                    <li>Roll the entire roll tightly in a full Nori sheet, slice it with a wet knife to reveal the hidden Jack-O'-Lantern faces, and serve!</li>
+                            </div>
+
+            <nav class="recipe-footer-nav">
+                <a href="index.html" class="nav-link">Return Home</a>
+                <a href="Spooky-Ghost-Nigiri.html" class="nav-link">Ghost Sushi Page</a>
+            </nav>
+
+        </div>
+    </main>
+</body>
+</html>
